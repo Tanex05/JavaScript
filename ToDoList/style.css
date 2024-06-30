@@ -1,0 +1,77 @@
+/* This css is created using the support of chatgpt ayiee */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 20px;
+}
+
+.addBtn {
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove borders */
+  cursor: pointer; /* Pointer/hand icon on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: transform 0.3s, background-color 0.3s; /* Add transition for smooth animation */
+}
+
+.addBtn:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.userInput,
+.dueDateInput {
+  padding: 10px;
+  margin: 10px 5px; /* Add margin around inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size to match body text */
+}
+
+.userInput {
+  width: 200px; /* Set fixed width for the task input */
+}
+
+.dueDateInput {
+  width: 150px; /* Set fixed width for the date input */
+}
+
+.todoItem {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.fitem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fitem:nth-child(1) {
+  width: 200px; /* Set fixed width for task */
+}
+
+.fitem:nth-child(2) {
+  width: 150px; /* Set fixed width for date */
+}
+
+.fitem:nth-child(3) {
+  width: 100px; /* Set fixed width for the button */
+}
+
+.delBtn {
+  background-color: #f44336; /* Red background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 10px 20px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: transform 0.3s, background-color 0.3s; /* Add transition for smooth animation */
+}
+
+.delBtn:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
