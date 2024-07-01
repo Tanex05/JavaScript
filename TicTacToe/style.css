@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid #ccc;
+  font-size: 48px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.item:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.05);
+}
+
+.item:disabled {
+  background-color: #e9e9e9;
+  cursor: not-allowed;
+}
+
+.item.x {
+  color: #ff6347;
+}
+
+.item.o {
+  color: #4682b4;
+}
